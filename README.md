@@ -1,2 +1,2 @@
 # Projetos
-Projetos pessoais e da Faculdade
+Projetos pessoais, exercicios de aprendizado e arquivos da Faculdade
