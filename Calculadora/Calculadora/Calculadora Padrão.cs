@@ -31,20 +31,44 @@ namespace Calculadora
 
         private void BtnDivisão_Click(object sender, EventArgs e)
         {
-            int num1, num2, resultado;
-            num1 = int.Parse(txtNum1.Text);
-            num2 = int.Parse(txtNum2.Text);
-            resultado = num1 / num2;
-            txtResultado.Text = resultado.ToString();
+            try
+            {
+                int num1, num2, resultado;
+                num1 = int.Parse(txtNum1.Text);
+                num2 = int.Parse(txtNum2.Text);
+                resultado = num1 / num2;
+                txtResultado.Text = resultado.ToString();
+            }
+            catch (System.FormatException)
+            {
+                MessageBox.Show("Valor não pode ser nulo ou em branco!" +
+                    " Informe os valores e selecione a operação!");
+                if (txtNum1.Text == "")
+                    txtNum1.Focus();
+                else
+                    txtNum2.Focus();
+            }
         }
 
         private void BtnAdiçao_Click(object sender, EventArgs e)
         {
-            int num1, num2, resultado;
-            num1 = int.Parse(txtNum1.Text);
-            num2 = int.Parse(txtNum2.Text);
-            resultado = num1 + num2;
-            txtResultado.Text = resultado.ToString();
+            try
+            {
+                int num1, num2, resultado;
+                num1 = int.Parse(txtNum1.Text);
+                num2 = int.Parse(txtNum2.Text);
+                resultado = num1 + num2;
+                txtResultado.Text = resultado.ToString();
+            }
+            catch (System.FormatException)
+            {
+                MessageBox.Show("Valor não pode ser nulo ou em branco!" +
+                    " Informe os valores e selecione a operação!");
+                if (txtNum1.Text == "")
+                    txtNum1.Focus();
+                else
+                    txtNum2.Focus();
+            }
         }
 
         private void BtnLimpar_Click(object sender, EventArgs e)
@@ -66,20 +90,45 @@ namespace Calculadora
 
         private void BtnMultiplicação_Click(object sender, EventArgs e)
         {
-            int num1, num2, resultado;
-            num1 = int.Parse(txtNum1.Text);
-            num2 = int.Parse(txtNum2.Text);
-            resultado = num1 * num2;
-            txtResultado.Text = resultado.ToString();
+            try
+            {
+                int num1, num2, resultado;
+                num1 = int.Parse(txtNum1.Text);
+                num2 = int.Parse(txtNum2.Text);
+                resultado = num1 * num2;
+                txtResultado.Text = resultado.ToString();
+            }
+            catch (System.FormatException)
+            {
+                MessageBox.Show("Valor não pode ser nulo ou em branco!" +
+                    " Informe os valores e selecione a operação!");
+                if (txtNum1.Text == "")
+                    txtNum1.Focus();
+                else
+                    txtNum2.Focus();
+            }
         }
+
 
         private void BtnSubtração_Click(object sender, EventArgs e)
         {
-            int num1, num2, resultado;
-            num1 = int.Parse(txtNum1.Text);
-            num2 = int.Parse(txtNum2.Text);
-            resultado = num1 - num2;
-            txtResultado.Text = resultado.ToString();
+            try
+            {
+                int num1, num2, resultado;
+                num1 = int.Parse(txtNum1.Text);
+                num2 = int.Parse(txtNum2.Text);
+                resultado = num1 - num2;
+                txtResultado.Text = resultado.ToString();
+            }
+            catch (System.FormatException)
+            {
+                MessageBox.Show("Valor não pode ser nulo ou em branco!" + 
+                    " Informe os valores e selecione a operação!");
+                if (txtNum1.Text == "")
+                    txtNum1.Focus();
+                else
+                    txtNum2.Focus();
+            }
         }
     }
 }
