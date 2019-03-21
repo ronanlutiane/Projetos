@@ -35,5 +35,12 @@ namespace Calculadora
             novo.Show();
             this.Visible = false;
         }
+
+        private void BtnJur_Comp_Click(object sender, EventArgs e)
+        {
+            Form3 novo = new Form3();
+            novo.Show();
+            this.Visible = false;
+        }
     }
 }

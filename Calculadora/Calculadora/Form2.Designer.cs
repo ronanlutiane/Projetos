@@ -35,10 +35,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.txtTemp_Dest = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnConverter = new System.Windows.Forms.Button();
+            this.btnSair = new System.Windows.Forms.Button();
+            this.btnVoltar = new System.Windows.Forms.Button();
+            this.btnLimpar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // txtTemp_Orig
@@ -123,62 +123,63 @@
             this.txtTemp_Dest.Size = new System.Drawing.Size(103, 26);
             this.txtTemp_Dest.TabIndex = 7;
             // 
-            // button1
+            // btnConverter
             // 
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(61, 244);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(134, 72);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "Converter";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.Button1_Click);
+            this.btnConverter.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btnConverter.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnConverter.Location = new System.Drawing.Point(61, 244);
+            this.btnConverter.Name = "btnConverter";
+            this.btnConverter.Size = new System.Drawing.Size(134, 72);
+            this.btnConverter.TabIndex = 8;
+            this.btnConverter.Text = "Converter";
+            this.btnConverter.UseVisualStyleBackColor = true;
+            this.btnConverter.Click += new System.EventHandler(this.Button1_Click);
             // 
-            // button2
+            // btnSair
             // 
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(238, 244);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(134, 72);
-            this.button2.TabIndex = 9;
-            this.button2.Text = "Sair";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.Button2_Click);
+            this.btnSair.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btnSair.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSair.Location = new System.Drawing.Point(238, 244);
+            this.btnSair.Name = "btnSair";
+            this.btnSair.Size = new System.Drawing.Size(134, 72);
+            this.btnSair.TabIndex = 9;
+            this.btnSair.Text = "Sair";
+            this.btnSair.UseVisualStyleBackColor = true;
+            this.btnSair.Click += new System.EventHandler(this.Button2_Click);
             // 
-            // button3
+            // btnVoltar
             // 
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(61, 333);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(134, 72);
-            this.button3.TabIndex = 10;
-            this.button3.Text = "Voltar";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.Button3_Click);
+            this.btnVoltar.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btnVoltar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVoltar.Location = new System.Drawing.Point(61, 333);
+            this.btnVoltar.Name = "btnVoltar";
+            this.btnVoltar.Size = new System.Drawing.Size(134, 72);
+            this.btnVoltar.TabIndex = 10;
+            this.btnVoltar.Text = "Voltar";
+            this.btnVoltar.UseVisualStyleBackColor = true;
+            this.btnVoltar.Click += new System.EventHandler(this.Button3_Click);
             // 
-            // button4
+            // btnLimpar
             // 
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(238, 333);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(134, 72);
-            this.button4.TabIndex = 11;
-            this.button4.Text = "Inverter";
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnLimpar.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btnLimpar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLimpar.Location = new System.Drawing.Point(238, 333);
+            this.btnLimpar.Name = "btnLimpar";
+            this.btnLimpar.Size = new System.Drawing.Size(134, 72);
+            this.btnLimpar.TabIndex = 11;
+            this.btnLimpar.Text = "Limpar";
+            this.btnLimpar.UseVisualStyleBackColor = true;
+            this.btnLimpar.Click += new System.EventHandler(this.Button4_Click);
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(428, 433);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnLimpar);
+            this.Controls.Add(this.btnVoltar);
+            this.Controls.Add(this.btnSair);
+            this.Controls.Add(this.btnConverter);
             this.Controls.Add(this.txtTemp_Dest);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -202,9 +203,9 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtTemp_Dest;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnConverter;
+        private System.Windows.Forms.Button btnSair;
+        private System.Windows.Forms.Button btnVoltar;
+        private System.Windows.Forms.Button btnLimpar;
     }
 }

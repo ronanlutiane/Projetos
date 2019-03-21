@@ -34,7 +34,7 @@
             this.button2 = new System.Windows.Forms.Button();
             this.btnTemp = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
+            this.btnJur_Comp = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -99,17 +99,18 @@
             this.button4.Text = "button4";
             this.button4.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // btnJur_Comp
             // 
-            this.button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.button5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(192, 113);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(115, 56);
-            this.button5.TabIndex = 5;
-            this.button5.Text = "button5";
-            this.button5.UseVisualStyleBackColor = true;
+            this.btnJur_Comp.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnJur_Comp.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btnJur_Comp.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnJur_Comp.Location = new System.Drawing.Point(192, 113);
+            this.btnJur_Comp.Name = "btnJur_Comp";
+            this.btnJur_Comp.Size = new System.Drawing.Size(115, 56);
+            this.btnJur_Comp.TabIndex = 5;
+            this.btnJur_Comp.Text = "Juros Compostos";
+            this.btnJur_Comp.UseVisualStyleBackColor = true;
+            this.btnJur_Comp.Click += new System.EventHandler(this.BtnJur_Comp_Click);
             // 
             // button6
             // 
@@ -131,7 +132,7 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(489, 367);
             this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
+            this.Controls.Add(this.btnJur_Comp);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.btnTemp);
             this.Controls.Add(this.button2);
@@ -151,7 +152,7 @@
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button btnTemp;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btnJur_Comp;
         private System.Windows.Forms.Button button6;
     }
 }
