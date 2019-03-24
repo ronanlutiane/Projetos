@@ -121,5 +121,15 @@ namespace Calculadora
             novo.Show();
             this.Visible = false;
         }
+
+        private void Button4_Click(object sender, EventArgs e)
+        {
+            
+            cboTempDest.Text = "";
+            cboTempOrig.Text = "";
+            txtTemp_Orig.Text = "";
+            txtTemp_Dest.Text = "";
+            txtTemp_Orig.Focus();
+        }
     }
 }
