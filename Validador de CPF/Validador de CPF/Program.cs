@@ -33,7 +33,7 @@ namespace Validador_de_CPF
             Console.WriteLine("Primeiro Dígito = " + dig1);
             String inicioCpf2 = cpf.Substring(0, 10);
             Console.WriteLine(inicioCpf2);
-             if (int.Parse(inicioCpf2[10].ToString()) == dig1) // inicioCpf2[10] agora indexa o caracter na posiçao 10 da string inicioCpf2
+            if (int.Parse(inicioCpf2[9].ToString()) == dig1) //inicioCpf2[10] agora indexa o caracter na posiçao 9 da string inicioCpf2
             {
                 for (int j = 0; j < 10; j++)
                 {
@@ -47,7 +47,7 @@ namespace Validador_de_CPF
                 {
                     dig2 = 11 - (soma % 11);
                 }
-                if (int.Parse(cpf[11].ToString()) == dig2)
+                if (int.Parse(cpf[10].ToString()) == dig2) // indexador apontando para a ultima posiçao da string cpf (o indexador de strings funciona como no array, indo de 0 a X sendo 0 a primeira posição e X a ultima posição)
                 {
                     Console.WriteLine("CPF Válido");
                 }
