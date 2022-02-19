@@ -58,7 +58,6 @@
     <Compile Include="Calculadora Padrão.Designer.cs">
       <DependentUpon>Calculadora Padrão.cs</DependentUpon>
     </Compile>
-    <Compile Include="CalculaOperacao.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>

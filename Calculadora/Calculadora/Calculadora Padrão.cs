@@ -18,38 +18,46 @@ namespace Calculadora
         }
 
         String tipoOperacao = "";
-        double operando1, operando2, resultado;
+        double operando1, operando2;
 
-        private void Button5_Click(object sender, EventArgs e)
+        private void btnVoltar_Click(object sender, EventArgs e)
         {
             Menu novo = new Menu();
             novo.Show();
             this.Visible = false;
         }
 
-        private void Button6_Click(object sender, EventArgs e)
+        private void btnSair_Click(object sender, EventArgs e)
         {
             Close();
-        }
-
-        private void BtnDivisão_Click(object sender, EventArgs e)
-        {
-            //Operacao operacao = new Operacao();
-            //operacao.tipoOperacao = "Divisao";
-
-            tipoOperacao = "Divisao";
-            operando1 = double.Parse(txtVisor.Text);
-            txtVisor.Text = "";
-
+            //Menu novo = new Menu();
+            //novo.Show();
         }
 
         private void BtnAdicao_Click(object sender, EventArgs e)
         {
-
-            //Operacao operacao = new Operacao();
-            //operacao.tipoOperacao = "Adicao";
-
             tipoOperacao = "Adicao";
+            operando1 = double.Parse(txtVisor.Text);
+            txtVisor.Text = "";
+        }
+
+        private void BtnSubtração_Click(object sender, EventArgs e)
+        {
+            tipoOperacao = "Subtracao";
+            operando1 = double.Parse(txtVisor.Text);
+            txtVisor.Text = "";
+        }
+
+        private void BtnMultiplicação_Click(object sender, EventArgs e)
+        {
+            tipoOperacao = "Multiplicacao";
+            operando1 = double.Parse(txtVisor.Text);
+            txtVisor.Text = "";
+        }
+
+        private void BtnDivisão_Click(object sender, EventArgs e)
+        {
+            tipoOperacao = "Divisao";
             operando1 = double.Parse(txtVisor.Text);
             txtVisor.Text = "";
         }
@@ -59,63 +67,15 @@ namespace Calculadora
             txtVisor.Text = "";
             operando1 = 0;
             operando2 = 0;
-        }
-
-        private void Label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void TxtResultado_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void BtnMultiplicação_Click(object sender, EventArgs e)
-        {
-            //Operacao operacao = new Operacao();
-            //operacao.tipoOperacao = "Multiplicacao";
-
-            tipoOperacao = "Multiplicacao";
-            operando1 = double.Parse(txtVisor.Text);
-            txtVisor.Text = "";
-
-        }
-
-
-        private void BtnSubtração_Click(object sender, EventArgs e)
-        {
-            //Operacao operacao = new Operacao();
-            //operacao.tipoOperacao = "Subtracao";
-
-            tipoOperacao = "Subtracao";
-            operando1 = double.Parse(txtVisor.Text);
-            txtVisor.Text = "";
-
-        }
+        }   
 
         private void btnIgual_Click(object sender, EventArgs e)
         {
-
+            
             operando2 = double.Parse(txtVisor.Text);
-            switch (tipoOperacao) {
-                case "Adicao":
-                    resultado = operando1 + operando2;
-                    txtVisor.Text = resultado.ToString();
-                    break;
-                case "Subtracao":
-                    resultado = operando1 - operando2;
-                    txtVisor.Text = resultado.ToString();
-                    break;
-                case "Divisao":
-                    resultado = operando1 / operando2;
-                    txtVisor.Text = resultado.ToString();
-                    break;
-                case "Multiplicacao":
-                    resultado = operando1 * operando2;
-                    txtVisor.Text = resultado.ToString();
-                    break;
-            }
+            Operacao operacao = new Operacao();
+            operacao.tipoOperacao = tipoOperacao;
+            txtVisor.Text = operacao.ExecutarOperacao(operando1, operando2);
         }
 
         private void btnZero_Click(object sender, EventArgs e)
@@ -158,16 +118,6 @@ namespace Calculadora
             txtVisor.Text = txtVisor.Text + "7";
         }
 
-        private void btnMudarSinal_Click(object sender, EventArgs e)
-        {
-            if (txtVisor.Text != "")
-            {
-                double alterandoSinal;
-                alterandoSinal = Convert.ToDouble(txtVisor.Text) * -1;
-                txtVisor.Text = alterandoSinal.ToString(); 
-            }
-        }
-
         private void btnOito_Click(object sender, EventArgs e)
         {
             txtVisor.Text = txtVisor.Text + "8";
@@ -177,5 +127,28 @@ namespace Calculadora
         {
             txtVisor.Text = txtVisor.Text + "9";
         }
+
+        private void btnDecimal_Click(object sender, EventArgs e)
+        {
+            if (txtVisor.Text == "")
+            {
+                txtVisor.Text = "0,";
+                    }
+            else
+            {
+                txtVisor.Text = txtVisor.Text + ",";
+            }
+
+        }
+
+        private void btnMudarSinal_Click(object sender, EventArgs e)
+        {
+            if (txtVisor.Text != "")
+            {
+                double alterandoSinal;
+                alterandoSinal = Convert.ToDouble(txtVisor.Text) * -1;
+                txtVisor.Text = alterandoSinal.ToString(); 
+            }
+        }        
     }
 }
