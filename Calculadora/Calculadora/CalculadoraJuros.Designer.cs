@@ -1,6 +1,6 @@
 ﻿namespace Calculadora
 {
-    partial class Form3
+    partial class CalculadoraJuros
     {
         /// <summary>
         /// Required designer variable.
@@ -45,6 +45,26 @@
             btnVoltar = new System.Windows.Forms.Button();
             btnSair = new System.Windows.Forms.Button();
             this.SuspendLayout();
+            // 
+            // btnVoltar
+            // 
+            btnVoltar.Location = new System.Drawing.Point(309, 235);
+            btnVoltar.Name = "btnVoltar";
+            btnVoltar.Size = new System.Drawing.Size(86, 33);
+            btnVoltar.TabIndex = 11;
+            btnVoltar.Text = "Voltar";
+            btnVoltar.UseVisualStyleBackColor = true;
+            btnVoltar.Click += new System.EventHandler(this.BtnVoltar_Click);
+            // 
+            // btnSair
+            // 
+            btnSair.Location = new System.Drawing.Point(438, 235);
+            btnSair.Name = "btnSair";
+            btnSair.Size = new System.Drawing.Size(86, 33);
+            btnSair.TabIndex = 12;
+            btnSair.Text = "Sair";
+            btnSair.UseVisualStyleBackColor = true;
+            btnSair.Click += new System.EventHandler(this.BtnSair_Click);
             // 
             // label1
             // 
@@ -156,26 +176,6 @@
             this.txtVfinal.Size = new System.Drawing.Size(221, 26);
             this.txtVfinal.TabIndex = 10;
             // 
-            // btnVoltar
-            // 
-            btnVoltar.Location = new System.Drawing.Point(309, 235);
-            btnVoltar.Name = "btnVoltar";
-            btnVoltar.Size = new System.Drawing.Size(86, 33);
-            btnVoltar.TabIndex = 11;
-            btnVoltar.Text = "Voltar";
-            btnVoltar.UseVisualStyleBackColor = true;
-            btnVoltar.Click += new System.EventHandler(this.BtnVoltar_Click);
-            // 
-            // btnSair
-            // 
-            btnSair.Location = new System.Drawing.Point(438, 235);
-            btnSair.Name = "btnSair";
-            btnSair.Size = new System.Drawing.Size(86, 33);
-            btnSair.TabIndex = 12;
-            btnSair.Text = "Sair";
-            btnSair.UseVisualStyleBackColor = true;
-            btnSair.Click += new System.EventHandler(this.BtnSair_Click);
-            // 
             // cboTempTaxa
             // 
             this.cboTempTaxa.FormattingEnabled = true;
@@ -188,7 +188,7 @@
             this.cboTempTaxa.Size = new System.Drawing.Size(116, 28);
             this.cboTempTaxa.TabIndex = 13;
             // 
-            // Form3
+            // CalculadoraJuros
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -209,8 +209,8 @@
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.Name = "Form3";
-            this.Text = "Form3";
+            this.Name = "CalculadoraJuros";
+            this.Text = "CalcularJuros";
             this.ResumeLayout(false);
             this.PerformLayout();
 

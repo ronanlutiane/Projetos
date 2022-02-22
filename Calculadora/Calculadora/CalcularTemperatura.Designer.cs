@@ -1,6 +1,6 @@
 ﻿namespace Calculadora
 {
-    partial class Form2
+    partial class CalcularTemperatura
     {
         /// <summary>
         /// Required designer variable.

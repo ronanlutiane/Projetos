@@ -30,8 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu));
             this.label1 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnCalculadoraPadrao = new System.Windows.Forms.Button();
+            this.btnCombustivel = new System.Windows.Forms.Button();
             this.btnTemp = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.btnJur_Comp = new System.Windows.Forms.Button();
@@ -49,30 +49,31 @@
             this.label1.Text = "Selecione a  calculadora que deseja abrir:";
             this.label1.Click += new System.EventHandler(this.Label1_Click);
             // 
-            // button1
+            // btnCalculadoraPadrao
             // 
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(57, 113);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(115, 56);
-            this.button1.TabIndex = 1;
-            this.button1.Text = "Padrão";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.Button1_Click);
+            this.btnCalculadoraPadrao.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnCalculadoraPadrao.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btnCalculadoraPadrao.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCalculadoraPadrao.Location = new System.Drawing.Point(57, 113);
+            this.btnCalculadoraPadrao.Name = "btnCalculadoraPadrao";
+            this.btnCalculadoraPadrao.Size = new System.Drawing.Size(115, 56);
+            this.btnCalculadoraPadrao.TabIndex = 1;
+            this.btnCalculadoraPadrao.Text = "Padrão";
+            this.btnCalculadoraPadrao.UseVisualStyleBackColor = true;
+            this.btnCalculadoraPadrao.Click += new System.EventHandler(this.btnCalculadoraPadrao_Click);
             // 
-            // button2
+            // btnCombustivel
             // 
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(322, 113);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(115, 56);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
+            this.btnCombustivel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnCombustivel.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btnCombustivel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCombustivel.Location = new System.Drawing.Point(322, 113);
+            this.btnCombustivel.Name = "btnCombustivel";
+            this.btnCombustivel.Size = new System.Drawing.Size(115, 56);
+            this.btnCombustivel.TabIndex = 2;
+            this.btnCombustivel.Text = "Combustível";
+            this.btnCombustivel.UseVisualStyleBackColor = true;
+            this.btnCombustivel.Click += new System.EventHandler(this.btnCombustivel_Click);
             // 
             // btnTemp
             // 
@@ -135,8 +136,8 @@
             this.Controls.Add(this.btnJur_Comp);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.btnTemp);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnCombustivel);
+            this.Controls.Add(this.btnCalculadoraPadrao);
             this.Controls.Add(this.label1);
             this.Name = "Menu";
             this.Text = "Menu";
@@ -148,8 +149,8 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnCalculadoraPadrao;
+        private System.Windows.Forms.Button btnCombustivel;
         private System.Windows.Forms.Button btnTemp;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button btnJur_Comp;

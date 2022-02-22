@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Calculadora
 {
-    public partial class Form2 : Form
+    public partial class CalcularTemperatura : Form
     {
-        public Form2()
+        public CalcularTemperatura()
         {
             InitializeComponent();
             txtTemp_Orig.Focus();

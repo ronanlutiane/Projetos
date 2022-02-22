@@ -22,7 +22,7 @@ namespace Calculadora
 
         }
 
-        private void Button1_Click(object sender, EventArgs e)
+        private void btnCalculadoraPadrao_Click(object sender, EventArgs e)
         {
             Calculadora_Padrão novo = new Calculadora_Padrão();
             novo.Show();
@@ -31,14 +31,21 @@ namespace Calculadora
 
         private void BtnTemp_Click(object sender, EventArgs e)
         {
-            Form2 novo = new Form2();
+            CalcularTemperatura novo = new CalcularTemperatura();
             novo.Show();
             this.Visible = false;
         }
 
         private void BtnJur_Comp_Click(object sender, EventArgs e)
         {
-            Form3 novo = new Form3();
+            CalculadoraJuros novo = new CalculadoraJuros();
+            novo.Show();
+            this.Visible = false;
+        }
+
+        private void btnCombustivel_Click(object sender, EventArgs e)
+        {
+            frmCalcularCombustivel novo = new frmCalcularCombustivel();
             novo.Show();
             this.Visible = false;
         }
