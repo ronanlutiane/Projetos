@@ -29,8 +29,8 @@ namespace Calculadora
 
         public string[] Calcular()
         {
-            double combustívelConsumido = Distancia / ConsumoMedio;
-            double valorGasto = combustívelConsumido * ValorCombustivel;
+            double combustívelConsumido = Math.Round((Distancia / ConsumoMedio),3);
+            double valorGasto = Math.Round ((combustívelConsumido * ValorCombustivel),3);
             if (IdaVolta)
             {
                 valorGasto *= 2;

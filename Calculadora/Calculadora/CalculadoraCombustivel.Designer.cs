@@ -51,6 +51,7 @@
             // 
             this.btnCalcular.AutoSize = true;
             this.btnCalcular.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btnCalcular.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCalcular.Location = new System.Drawing.Point(211, 258);
             this.btnCalcular.Name = "btnCalcular";
             this.btnCalcular.Size = new System.Drawing.Size(90, 38);
@@ -79,6 +80,7 @@
             // 
             // txtValorCombustivel
             // 
+            this.txtValorCombustivel.BackColor = System.Drawing.Color.LightGray;
             this.txtValorCombustivel.Location = new System.Drawing.Point(156, 77);
             this.txtValorCombustivel.Name = "txtValorCombustivel";
             this.txtValorCombustivel.Size = new System.Drawing.Size(100, 20);
@@ -95,6 +97,7 @@
             // 
             // lstTipoCombustível
             // 
+            this.lstTipoCombustível.BackColor = System.Drawing.Color.LightGray;
             this.lstTipoCombustível.FormattingEnabled = true;
             this.lstTipoCombustível.Location = new System.Drawing.Point(397, 77);
             this.lstTipoCombustível.Name = "lstTipoCombustível";
@@ -112,6 +115,7 @@
             // 
             // txtConsumoMedio
             // 
+            this.txtConsumoMedio.BackColor = System.Drawing.Color.LightGray;
             this.txtConsumoMedio.Location = new System.Drawing.Point(211, 120);
             this.txtConsumoMedio.Name = "txtConsumoMedio";
             this.txtConsumoMedio.Size = new System.Drawing.Size(100, 20);
@@ -138,6 +142,7 @@
             // 
             // txtDistancia
             // 
+            this.txtDistancia.BackColor = System.Drawing.Color.LightGray;
             this.txtDistancia.Location = new System.Drawing.Point(468, 120);
             this.txtDistancia.Name = "txtDistancia";
             this.txtDistancia.Size = new System.Drawing.Size(100, 20);
@@ -154,6 +159,7 @@
             // 
             // txtResultadoCombustivel
             // 
+            this.txtResultadoCombustivel.BackColor = System.Drawing.Color.LightGray;
             this.txtResultadoCombustivel.Location = new System.Drawing.Point(42, 217);
             this.txtResultadoCombustivel.Name = "txtResultadoCombustivel";
             this.txtResultadoCombustivel.Size = new System.Drawing.Size(216, 20);
@@ -179,6 +185,7 @@
             // 
             // txtResultadoValor
             // 
+            this.txtResultadoValor.BackColor = System.Drawing.Color.LightGray;
             this.txtResultadoValor.Location = new System.Drawing.Point(400, 217);
             this.txtResultadoValor.Name = "txtResultadoValor";
             this.txtResultadoValor.Size = new System.Drawing.Size(212, 20);
@@ -188,6 +195,7 @@
             // 
             this.btnVoltar.AutoSize = true;
             this.btnVoltar.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btnVoltar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnVoltar.Location = new System.Drawing.Point(372, 258);
             this.btnVoltar.Name = "btnVoltar";
             this.btnVoltar.Size = new System.Drawing.Size(90, 38);
@@ -200,6 +208,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(73)))));
             this.ClientSize = new System.Drawing.Size(681, 335);
             this.Controls.Add(this.btnVoltar);
             this.Controls.Add(this.txtResultadoValor);
@@ -218,6 +227,7 @@
             this.Controls.Add(this.lblValorDoCombustivel);
             this.Controls.Add(this.lblOrientacao);
             this.Controls.Add(this.btnCalcular);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmCalcularCombustivel";
             this.Text = "Calcular Combustível";
             this.ResumeLayout(false);

@@ -19,7 +19,7 @@ namespace Calculadora
 
         private void BtnSair_Click(object sender, EventArgs e)
         {
-            Close();
+            this.Close();
         }
 
         private void BtnVoltar_Click(object sender, EventArgs e)

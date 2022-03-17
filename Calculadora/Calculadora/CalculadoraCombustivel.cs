@@ -56,11 +56,11 @@ namespace Calculadora
                 distancia = Convert.ToDouble(txtDistancia.Text);
             }
 
-            string[] tipoCombustível = new string[4];
-            tipoCombustível[1] = "Gasolina";
-            tipoCombustível[2] = "Álcool";
-            tipoCombustível[3] = "Diesel";
-            tipoCombustível[4] = "GNV - Gás Natural Veicular";
+            //string[] tipoCombustível = new string[4];
+            //tipoCombustível[1] = "Gasolina";
+            //tipoCombustível[2] = "Álcool";
+            //tipoCombustível[3] = "Diesel";
+            //tipoCombustível[4] = "GNV - Gás Natural Veicular";
 
             //var bindableNames = from name in tipoCombustível select new { Names = name };
 
@@ -80,7 +80,8 @@ namespace Calculadora
         {
             Menu novo = new Menu();
             novo.Show();
-            this.Visible = false;
+            //this.Visible = false;
+            this.Close();
         }
     }
 }

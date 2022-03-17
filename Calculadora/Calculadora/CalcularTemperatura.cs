@@ -112,7 +112,7 @@ namespace Calculadora
 
         private void Button2_Click(object sender, EventArgs e)
         {
-            Close();
+            this.Close();
         }
 
         private void Button3_Click(object sender, EventArgs e)

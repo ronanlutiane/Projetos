@@ -29,7 +29,7 @@ namespace Calculadora
 
         private void btnSair_Click(object sender, EventArgs e)
         {
-            Close();
+            this.Close();
             //Menu novo = new Menu();
             //novo.Show();
         }
@@ -71,8 +71,14 @@ namespace Calculadora
 
         private void btnIgual_Click(object sender, EventArgs e)
         {
-            
-            operando2 = double.Parse(txtVisor.Text);
+            if (txtVisor.Text != "")
+            {
+                operando2 = double.Parse(txtVisor.Text);
+            }
+            else
+            {
+                operando2 = operando1;
+            }
             Operacao operacao = new Operacao();
             operacao.tipoOperacao = tipoOperacao;
             txtVisor.Text = operacao.ExecutarOperacao(operando1, operando2);
