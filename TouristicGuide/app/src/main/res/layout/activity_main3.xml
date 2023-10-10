@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity3">
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="304dp"
+        android:layout_height="208dp"
+        android:onClick="Pessoa2"
+        app:layout_constraintBottom_toTopOf="@+id/textView10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:srcCompat="@drawable/praca_estacao1" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="381dp"
+        android:layout_height="264dp"
+        android:editable="false"
+        android:text="A Praça Rui Barbosa, mais conhecida como Praça da Estação, é uma praça situada na região central da cidade de Belo Horizonte e está localizada em frente antigo prédio da Estação Ferroviária, atual Museu de Artes e Ofícios. A estação ferroviária era a porta de entrada dos materiais e equipamentos utilizados na construção da nova capital de Minas Gerais. A praça é um dos principais espaços públicos para a realização de shows e eventos e um espaço livre para manifestações populares de todas camadas sociais. A entrada da Estação Central do Metrô de Belo Horizonte também está situada nesta praça.   No largo em frente ao prédio da estação, encontra-se a estátua Monumento à Terra Mineira, que retrata a conquista de Minas Gerais pelos bandeirantes e homenageia os heróis da Inconfidência. Um homem com a bandeira de Minas Gerais representa o Estado. No prédio da estação, fica a maquete de ferreomodelismo, uma representação de mini ferrovia.  Neste ponto turístico, fazem parte do acervo arquitetônico da Praça da Estação: a Serraria Sousa Pinto, o Museu de Artes e Ofícios e os viadutos de Santa Teresa e da Floresta e o Centro Cultural da Universidade Federal de Minas Gerais."
+        android:textAlignment="textStart"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnVoltar2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView8" />
+
+    <Button
+        android:id="@+id/btnVoltar2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:onClick="Retornar"
+        android:text="Voltar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnLigar"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <Button
+        android:id="@+id/btnLigar2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:layout_marginEnd="80dp"
+        android:onClick="Ir"
+        android:text="Ir Para"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/btnVoltar2"
+        app:layout_constraintTop_toBottomOf="@+id/textView10"
+        app:layout_constraintVertical_bias="0.506" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="338dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="16dp"
+        android:editable="false"
+        android:text="Praça da Estação"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

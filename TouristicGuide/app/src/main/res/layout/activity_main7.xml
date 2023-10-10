@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity7">
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="136dp"
+        android:onClick="Pessoa6"
+        app:layout_constraintBottom_toTopOf="@+id/textView14"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView5"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:srcCompat="@drawable/pessoa6" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="294dp"
+        android:layout_height="201dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginBottom="103dp"
+        android:editable="false"
+        android:text="Olá, meu nome é Júlia e tenho 31 anos. Sou engenheira e adoro desafios intelectuais. Nas horas vagas, gosto de fazer aulas de dança e experimentar novas receitas na cozinha. Também sou uma grande fã de arte e frequentemente visito exposições. Moro em São Paulo, capital, e estou procurando alguém que tenha uma paixão por aprender e que goste de experimentar coisas novas."
+        android:textAlignment="textStart"
+        app:layout_constraintBottom_toTopOf="@+id/btnVoltar6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView12" />
+
+    <Button
+        android:id="@+id/btnVoltar6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="Retornar"
+        android:text="Voltar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnLigar6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+    <Button
+        android:id="@+id/btnLigar6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:onClick="Ligar"
+        android:text="Ligar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnVoltar6"
+        app:layout_constraintTop_toBottomOf="@+id/textView10"
+        app:layout_constraintVertical_bias="0.159" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="338dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="47dp"
+        android:editable="false"
+        android:text="Júlia Martins"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

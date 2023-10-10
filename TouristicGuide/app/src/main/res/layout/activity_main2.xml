@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="338dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="13dp"
+        android:editable="false"
+        android:text="Lagoa da Pampulha"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="370dp"
+        android:layout_height="224dp"
+        android:editable="false"
+        android:text="Considerado pela UNESCO como Patrimônio Cultural da Humanidade, o Conjunto Moderno da Pampulha é formado pelos jardins de Burle Marx, pela Igreja de São Francisco de Assis, pelo Museu de Arte da Pampulha, pela antiga Casa do Baile, pelo Iate Tênis Clube, pela Praça Dalva Simão, e pelos espelho d'água e orla da Lagoa, no trecho que os articula. Teve a colaboração de vários gênios como o arquiteto Oscar Niemeyer, o paisagista Roberto Burle Marx e o pintor Cândido Portinari. A Lagoa da Pampulha possui várias outras atrações como a Casa Kubitschek, o Minerão, onde funciona o Museu Brasileiro do Futebol, o Ginásio Mineirinho, o Parque Ecológico da Pampulha, o Zoológico e o Parque Guanabara."
+        android:textAlignment="textStart"
+        app:layout_constraintBottom_toTopOf="@+id/btnVoltar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+
+    <Button
+        android:id="@+id/btnVoltar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginBottom="30dp"
+        android:onClick="Retornar"
+        android:text="Voltar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnLigar"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <Button
+        android:id="@+id/btnLigar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="30dp"
+        android:onClick="Ir"
+        android:text="Ir Para"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnVoltar"
+        app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="333dp"
+        android:layout_height="216dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/Pampulha" />
+</androidx.constraintlayout.widget.ConstraintLayout>
